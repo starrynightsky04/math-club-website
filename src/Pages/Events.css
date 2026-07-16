@@ -1,0 +1,282 @@
+/* Events page */
+
+.events-page {
+  overflow-x: hidden;
+}
+
+/* Featured weekly meeting banner */
+.events-banner {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+  color: var(--white);
+  border-bottom: 5px solid var(--gold);
+  padding: 4rem 1.5rem 3.5rem;
+}
+
+.events-banner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.events-kicker {
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 0.75rem;
+}
+
+.events-banner h1 {
+  color: var(--white);
+  font-size: 3rem;
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+
+.events-banner h1 .events-accent {
+  color: var(--gold);
+}
+
+.events-meeting-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
+  font-size: 1.35rem;
+  color: var(--light-blue-soft);
+  margin-top: 1.25rem;
+}
+
+.events-meeting-line strong {
+  color: var(--white);
+}
+
+.events-meeting-line .events-dot {
+  color: var(--gold);
+  font-size: 1rem;
+}
+
+/* Two weekly activity panels */
+.events-weekly {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 1rem;
+}
+
+.events-weekly-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.events-panel {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--gold);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 14px rgba(20, 33, 61, 0.06);
+}
+
+.events-panel .events-tag {
+  display: inline-block;
+  background: var(--bg-soft);
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 0.9rem;
+}
+
+.events-panel h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.events-panel p {
+  margin: 0;
+  color: var(--text);
+}
+
+/* Tournament timeline */
+.events-timeline-wrap {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-top: 3.5rem;
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.events-timeline-inner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.events-timeline-head {
+  margin-bottom: 2.5rem;
+}
+
+.events-timeline-head h2 {
+  font-size: 2.25rem;
+  margin: 0 0 0.4rem;
+}
+
+.events-timeline-head p {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.events-timeline {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 2.25rem;
+}
+
+/* the vertical gold line */
+.events-timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  width: 3px;
+  background: var(--gold);
+  border-radius: 2px;
+}
+
+.events-stop {
+  position: relative;
+  padding: 0 0 2.5rem;
+}
+
+.events-stop:last-child {
+  padding-bottom: 0;
+}
+
+/* the dot marker */
+.events-stop::before {
+  content: '';
+  position: absolute;
+  left: -2.25rem;
+  top: 0.3rem;
+  width: 17px;
+  height: 17px;
+  background: var(--white);
+  border: 4px solid var(--gold);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--bg-soft);
+}
+
+.events-season {
+  display: inline-block;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.35rem;
+}
+
+.events-stop h3 {
+  font-size: 1.6rem;
+  margin: 0 0 0.4rem;
+}
+
+.events-when {
+  color: var(--navy);
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+}
+
+.events-stop p {
+  margin: 0;
+  color: var(--text);
+  max-width: 60ch;
+}
+
+/* Past events footer block */
+.events-past {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+}
+
+.events-past-card {
+  border: 2px dashed var(--light-blue);
+  background: var(--white);
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.events-past-card .events-big-mark {
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin: 0 0 0.5rem;
+  line-height: 1;
+}
+
+.events-past-card h2 {
+  font-size: 1.9rem;
+  margin: 0 0 0.6rem;
+}
+
+.events-past-card p {
+  color: var(--muted);
+  margin: 0 auto;
+  max-width: 52ch;
+}
+
+.events-results {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 52ch;
+  text-align: left;
+}
+
+.events-results li {
+  color: var(--muted);
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--border, #e5e5e5);
+}
+
+.events-results li:first-child {
+  border-top: none;
+}
+
+.events-results strong {
+  color: inherit;
+}
+
+@media (max-width: 700px) {
+  .events-banner {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  .events-banner h1 {
+    font-size: 2.25rem;
+  }
+
+  .events-meeting-line {
+    font-size: 1.15rem;
+    gap: 0.35rem;
+    flex-direction: column;
+  }
+
+  .events-meeting-line .events-dot {
+    display: none;
+  }
+
+  .events-weekly-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-timeline-head h2 {
+    font-size: 1.8rem;
+  }
+}

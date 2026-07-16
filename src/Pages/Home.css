@@ -1,0 +1,187 @@
+/* Home page specific layout */
+.home-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+  color: var(--white);
+  padding: 5rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.home-hero .home-kicker {
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.home-hero h1 {
+  color: var(--white);
+  font-size: 3.4rem;
+  line-height: 1.05;
+  max-width: 14ch;
+  margin: 0 0 1.25rem;
+}
+
+.home-hero h1 .accent { color: var(--gold); }
+
+.home-hero .home-tagline {
+  color: var(--light-blue-soft);
+  font-size: 1.3rem;
+  max-width: 30rem;
+  margin: 0 0 2rem;
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* big faint formula watermark in the hero */
+.home-hero-mark {
+  position: absolute;
+  right: -1rem;
+  bottom: -2rem;
+  font-size: 11rem;
+  color: var(--gold);
+  opacity: 0.07;
+  font-style: italic;
+  z-index: 0;
+  user-select: none;
+}
+
+/* quick facts strip right under the hero */
+.home-facts {
+  background: var(--gold);
+  color: var(--navy-dark);
+}
+
+.home-facts-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  padding: 1.25rem 1.5rem;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.home-facts span { white-space: nowrap; }
+.home-facts .home-fact-label {
+  font-weight: 700;
+  opacity: 0.65;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+  margin-right: 0.5rem;
+}
+
+/* who we are split, offset and asymmetric */
+.home-who {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.home-who .home-photo {
+  background: var(--light-blue-soft);
+  border: 2px dashed var(--light-blue);
+  border-radius: 12px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--navy);
+  font-weight: 500;
+  padding: 1rem;
+  transform: rotate(-1.5deg);
+}
+
+.home-who h2 { font-size: 2.2rem; }
+
+/* what we do, asymmetric feature plus two stacked */
+.home-do {
+  background: var(--bg-soft);
+  padding: 4.5rem 1.5rem;
+}
+
+.home-do-inner { max-width: 1100px; margin: 0 auto; }
+
+.home-do h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.home-do-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 1.5rem;
+}
+
+.home-do-feature {
+  background: var(--navy);
+  color: var(--white);
+  border-radius: 14px;
+  padding: 2.5rem;
+  border-bottom: 6px solid var(--gold);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 260px;
+}
+
+.home-do-feature h3 { color: var(--white); font-size: 1.7rem; }
+.home-do-feature p { color: var(--light-blue-soft); margin: 0; font-size: 1.1rem; }
+
+.home-do-stack { display: grid; gap: 1.5rem; }
+
+.home-do-small {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--gold);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+}
+
+.home-do-small h3 { margin-top: 0; }
+.home-do-small p { margin: 0; color: var(--muted); }
+
+/* closing meeting banner */
+.home-banner {
+  background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.home-banner h2 {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-banner .home-room { color: var(--gold); }
+.home-banner p { color: var(--light-blue-soft); font-size: 1.15rem; margin-bottom: 1.75rem; }
+
+@media (max-width: 800px) {
+  .home-hero h1 { font-size: 2.4rem; }
+  .home-who { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 1.5rem; }
+  .home-do-grid { grid-template-columns: 1fr; }
+  .home-hero-mark { font-size: 7rem; }
+}

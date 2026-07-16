@@ -1,0 +1,196 @@
+/* Officers page: meet-the-team layout */
+
+.officers-hero {
+  text-align: center;
+  padding: 3.5rem 1.5rem 1rem;
+}
+
+.officers-hero h1 {
+  font-size: 3rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+.officers-hero .officers-kicker {
+  color: var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  margin: 0 0 0.75rem;
+}
+
+.officers-hero p {
+  color: var(--muted);
+  font-size: 1.2rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* Advisor: wide featured banner */
+.officers-advisor-wrap {
+  max-width: 1000px;
+  margin: 2.5rem auto 0;
+  padding: 0 1.5rem;
+}
+
+.officers-advisor {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 0;
+  background: var(--navy);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(20, 33, 61, 0.18);
+}
+
+.officers-advisor-photo {
+  background: var(--navy-dark);
+  color: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  border-right: 5px solid var(--gold);
+  min-height: 240px;
+}
+
+.officers-advisor-body {
+  padding: 2.5rem 2.75rem;
+  color: var(--light-blue-soft);
+}
+
+.officers-advisor-body .officers-tag {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy-dark);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.officers-advisor-body h2 {
+  color: var(--white);
+  font-size: 2.1rem;
+  margin: 0 0 0.75rem;
+}
+
+.officers-advisor-body p {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+/* Student officers: staggered offset layout */
+.officers-students {
+  max-width: 1000px;
+  margin: 4rem auto 5rem;
+  padding: 0 1.5rem;
+}
+
+.officers-students-head {
+  margin-bottom: 2.5rem;
+}
+
+.officers-students-head h2 {
+  font-size: 2.2rem;
+  display: inline-block;
+  border-bottom: 4px solid var(--gold);
+  padding-bottom: 0.4rem;
+  margin: 0 0 0.5rem;
+}
+
+.officers-students-head p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.officers-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 2.5rem;
+}
+
+.officers-card {
+  position: relative;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.75rem 1.75rem 2rem;
+  box-shadow: 0 6px 18px rgba(20, 33, 61, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* stagger: nudge every other card down for an offset feel */
+.officers-card:nth-child(even) {
+  margin-top: 3rem;
+}
+
+.officers-card:hover {
+  transform: translateY(-8px) rotate(-0.6deg);
+  box-shadow: 0 20px 40px rgba(20, 33, 61, 0.16);
+}
+
+.officers-card .officers-num {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--light-blue-soft);
+  line-height: 1;
+}
+
+.officers-photo {
+  background: var(--bg-soft);
+  border: 2px dashed var(--light-blue);
+  border-radius: 12px;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.25rem;
+}
+
+.officers-role {
+  color: var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  margin: 0 0 0.2rem;
+}
+
+.officers-name {
+  color: var(--navy);
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.officers-bio {
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .officers-advisor { grid-template-columns: 1fr; }
+  .officers-advisor-photo { border-right: none; border-bottom: 5px solid var(--gold); }
+  .officers-advisor-body { padding: 2rem 1.75rem; }
+  .officers-row { grid-template-columns: 1fr; gap: 1.5rem; }
+  .officers-card:nth-child(even) { margin-top: 0; }
+  .officers-hero h1 { font-size: 2.3rem; }
+}

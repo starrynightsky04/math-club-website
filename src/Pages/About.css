@@ -1,0 +1,185 @@
+.about {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Asymmetric intro */
+.about-intro {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 3rem;
+  align-items: end;
+  padding: 4rem 0 2rem;
+}
+
+.about-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0 0 0.5rem;
+}
+
+.about-intro-head h1 {
+  font-size: 3.4rem;
+  line-height: 1.05;
+  margin: 0;
+  color: var(--navy);
+}
+
+.about-intro-body {
+  font-size: 1.18rem;
+}
+
+.about-intro-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Wide pull quote */
+.about-quote-wrap {
+  padding: 1.5rem 0 3.5rem;
+}
+
+.about-quote {
+  margin: 0;
+  border-left: 8px solid var(--gold);
+  padding: 0.5rem 0 0.5rem 2rem;
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--navy);
+  max-width: 900px;
+}
+
+/* Section labels */
+.about-section-label {
+  font-size: 1.5rem;
+  color: var(--navy);
+  margin: 0 0 1.5rem;
+}
+
+/* Feature row (replaces bullet list) */
+.about-features {
+  padding: 0 0 4rem;
+}
+
+.about-feature-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.about-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.5rem;
+  background: var(--bg-soft);
+  border-top: 4px solid var(--gold);
+  border-radius: 8px;
+}
+
+.about-feature-stat {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.about-feature-label {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* Timeline */
+.about-story {
+  padding: 0 0 3rem;
+}
+
+.about-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  border-left: 3px solid var(--gold-soft);
+}
+
+.about-milestone {
+  position: relative;
+  padding: 0 0 2rem 1.75rem;
+}
+
+.about-milestone:last-child {
+  padding-bottom: 0;
+}
+
+.about-milestone::before {
+  content: '';
+  position: absolute;
+  left: -1.95rem;
+  top: 0.35rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  background: var(--gold);
+  border-radius: 50%;
+  border: 3px solid var(--white);
+}
+
+.about-milestone-year {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
+
+.about-milestone-body h3 {
+  margin: 0 0 0.35rem;
+}
+
+.about-milestone-body p {
+  margin: 0;
+}
+
+/* Closing meet line */
+.about-meet {
+  margin: 1rem 0 4.5rem;
+  background: var(--navy);
+  border-radius: 10px;
+  padding: 2rem 2.25rem;
+}
+
+.about-meet p {
+  margin: 0;
+  color: var(--light-blue-soft);
+  font-size: 1.2rem;
+}
+
+.about-meet strong {
+  color: var(--white);
+}
+
+@media (max-width: 700px) {
+  .about-intro {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    padding-top: 2.5rem;
+  }
+
+  .about-intro-head h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-quote {
+    font-size: 1.5rem;
+    padding-left: 1.25rem;
+    border-left-width: 6px;
+  }
+
+  .about-feature-row {
+    grid-template-columns: 1fr;
+  }
+}
