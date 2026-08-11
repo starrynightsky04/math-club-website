@@ -50,6 +50,25 @@ export const contact = {
 
 
 // ------------------------------------------------------------
+//   NEWSLETTER SIGNUP LINK
+// ------------------------------------------------------------
+//   The "Join our newsletter" bar at the bottom of every page
+//   sends people to a Google Form that you own. Everyone who
+//   signs up shows up in a spreadsheet you can open any time.
+//
+//   TO SET IT UP:
+//     1. Go to forms.google.com and make a new form.
+//     2. Add one question, "Email address", and mark it required.
+//     3. Click Send, then the link icon, then Copy.
+//     4. Paste that link between the quotes below.
+//
+//   Until you paste a link here, the button opens an email to
+//   the club address instead, so the site still works.
+// ------------------------------------------------------------
+export const newsletterFormUrl = ''  // e.g. 'https://forms.gle/abc123'
+
+
+// ------------------------------------------------------------
 //   FACULTY ADVISOR
 // ------------------------------------------------------------
 //   The teacher who advises the club. Shown on the Officers
